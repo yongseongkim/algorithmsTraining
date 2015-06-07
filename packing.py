@@ -42,7 +42,7 @@ while case < test_case:
 
     # insert object to list
     things = []
-    for i in range(num_things):
+    for i in xrange(num_things):
         temp_input = sys.stdin.readline().strip().split()
         things.append(Thing(temp_input[0], int(temp_input[1]), int(temp_input[2])))
 
