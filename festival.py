@@ -6,17 +6,17 @@ test_case = input()
 case = 0
 while case < test_case:
     max_days, teams = [int(x) for x in raw_input().split()]
-    cost = [float(x) for x in raw_input().split()]
+    cost = [int(x) for x in raw_input().split()]
     cost.insert(0, 0)
     for x in xrange(max_days + 1):
         if x != 0:
             cost[x] += cost[x-1]
 
-    min_avr = cost[max_days] / max_days
+    min_avr = float(cost[max_days]) / max_days
     # days는 예약할 날 수를 뜻한다. 최소 days는 team 수다.
     for days in xrange(teams, max_days + 1):
         min_sum = cost[max_days]
-        for idx in xrange(days, max_days):
+        for idx in xrange(days, max_days + 1):
             if min_sum > cost[idx] - cost[idx - days]:
                 min_sum = cost[idx] - cost[idx - days]
         if min_avr > (float(min_sum) / days):
