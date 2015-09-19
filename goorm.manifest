@@ -1,1 +1,0 @@
-{"type":"python","detailedtype":"default","author":"kys911015_google","name":"algorithmTraining","description":"","date":"2015/9/15 13:37:20","plugins":{"goorm.plugin.python":{"plugin.python.compiler_type":"python2","plugin.python.main":"index","plugin.python.source_path":"","plguin.python.run_on":"console"}},"is_user_plugin":false}
