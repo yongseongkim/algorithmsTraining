@@ -5,4 +5,4 @@ while case_index < total_case:
 	
 	# do something
 	
-	case_index = case_index + 1
+	case_index += 1
