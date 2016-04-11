@@ -34,12 +34,12 @@ def find_first_placce(board):
 
 
 def board_cover(board):
-    if cover_all(board):
+    # find first place that is '.'
+    row, column = find_first_placce(board)
+    if row >= len(board):
         global case_count
         case_count += 1
         return
-    # find first place that is '.'
-    row, column = find_first_placce(board)
     if in_range(board, row, column + 1) and in_range(board, row + 1, column + 1):
         # ㄱ
         __board = [list(row_cells) for row_cells in board]
