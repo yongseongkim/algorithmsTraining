@@ -1,8 +1,8 @@
 # Algorithms Training
 
 ### Requirements
-python 2.7
-[알고리즘 문제해결전략](http://book.algospot.com/)
+- python 2.7
+- [알고리즘 문제해결전략](http://book.algospot.com/)
 
 ### Problems
 - [RockFestival](https://algospot.com/judge/problem/read/FESTIVAL)
