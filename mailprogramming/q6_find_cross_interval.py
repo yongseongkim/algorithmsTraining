@@ -7,10 +7,23 @@
 Input: {{2,4}, {1,5}, {7,9}}
 Output: {{1,5}, {7,9}}
 
+Input: {{3,6}, {1,3}, {2,4}}
+Output: {{1,6}}
+
+
 '''
 
 
-def find_cross_interval(inp):
-    print(inp)
-    return []
+def find_cross_interval(intervals):
+    sorted_intervals = sorted(intervals, key=lambda interval: interval[0])
+    result = [sorted_intervals[0]]
+    for interval in intervals:
+        if result[-1][1] < interval[0]:
+            result.append(interval)
+        else:
+            result[-1][1] = max(result[-1][1], interval[1])
+    return result
 
+
+filtinp = input().replace(' ', '').replace('{', '').replace('}', '').split(',')
+print(find_cross_interval([[filtinp[i], filtinp[i + 1]] for i in range(0, len(filtinp), 2)]))
