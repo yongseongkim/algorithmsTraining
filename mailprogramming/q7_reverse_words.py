@@ -11,9 +11,16 @@ Output: “cba 321 elppa”
 
 
 def reverse_words(inp):
+    result = []
+    for word in inp.split(' '):
+        result.append(reverse_word(word))
+    return ' '.join(result)
+
+
+def reverse_word(word):
     result = ''
-    for i in range(len(inp) - 1, -1, -1):
-        result += inp[i]
+    for i in range(len(word) - 1, -1, -1):
+        result += word[i]
     return result
 
 
