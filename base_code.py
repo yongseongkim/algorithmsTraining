@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-total_case = input()
+total_case = int(input())
 case_index = 0
 
 while case_index < total_case:
