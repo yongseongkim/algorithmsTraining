@@ -1,6 +1,6 @@
 # -*- coding: utf8 -*-
 
-total_case = input()
+total_case = int(input())
 case_index = 0
 case_count = 0
 
@@ -24,8 +24,8 @@ def in_range(board, row, column):
 
 
 def find_first_placce(board):
-    for row_idx in xrange(len(board)):
-        for column_idx in xrange(len(board[row_idx])):
+    for row_idx in range(len(board)):
+        for column_idx in range(len(board[row_idx])):
             if board[row_idx][column_idx] == '.':
                 row = row_idx
                 column = column_idx
@@ -72,11 +72,11 @@ def board_cover(board):
 
 while case_index < total_case:
     case_count = 0
-    row, column = [int(x) for x in raw_input().split()]
+    row, column = [int(x) for x in input().split()]
 
     board = []
-    board = [list(raw_input()) for x in xrange(row)]
+    board = [list(input()) for x in range(row)]
     if not cover_all(board):
         board_cover(board)
-    print case_count
+    print(case_count)
     case_index += 1

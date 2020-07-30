@@ -42,12 +42,12 @@ while case < test_case:
 
     # insert object to list
     things = []
-    for i in xrange(num_things):
+    for i in range(num_things):
         temp_input = sys.stdin.readline().strip().split()
         things.append(Thing(temp_input[0], int(temp_input[1]), int(temp_input[2])))
 
     pack(volume_limit, 0, [])
-    print max_value, len(max_things)
+    print(max_value, len(max_things))
     for thing in max_things:
-        print thing.name
+        print(thing.name)
     case += 1

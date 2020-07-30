@@ -1,4 +1,6 @@
 # -*- coding: utf8 -*-
+# https://algospot.com/judge/problem/read/QUADTREE
+
 import sys
 
 total_case = input()
@@ -33,7 +35,7 @@ def re_swap(tree):
 
 
 def print_result(tree):
-    for i in xrange(len(tree)):
+    for i in range(len(tree)):
         if type(tree[i]) is list:
             sys.stdout.write('x')
             print_result(tree[i])
@@ -42,9 +44,8 @@ def print_result(tree):
 
 
 while case_index < total_case:
-    str = raw_input()
+    str = input()
     tree = re_tree([], list(str))
     re_swap(tree)
     print_result(tree)
-    print ''
     case_index += 1

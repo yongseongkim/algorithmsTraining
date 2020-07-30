@@ -9,7 +9,7 @@ def calculate_min(part):
     min_result = sys.maxint
     if len(part) <= 5:
         gaps = []
-        for i xrange(1, len(gaps)):
+        for i in range(1, len(gaps)):
             gaps.append(part[i] - part[i - 1])
 
         stack = []
@@ -20,14 +20,14 @@ def calculate_min(part):
                 stack.append(element)
                 continue
 
-    for i in xrange(3, 6):
+    for i in range(3, 6):
         subpart = part[i:len(part)]
         min_result = min(min, calculate_min(min_result))
     return min_result
 
 
 while case_index < total_case:
-    part = raw_input()
+    part = input()
     result = calculate_min(part)
-    print result
+    print(result)
     case_index += 1

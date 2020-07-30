@@ -1,5 +1,7 @@
 # -*- coding: utf8 -*-
-total_case = input()
+# https://algospot.com/judge/problem/read/FENCE
+
+total_case = int(input())
 case_index = 0
 
 # 분할 정복 알고리즘
@@ -33,7 +35,7 @@ def get_max_area(fences, left, right):
 
 while case_index < total_case:
 	number_of_fences = input()
-	fences = [int(x) for x in raw_input().split(' ')]
+	fences = [int(x) for x in input().split(' ')]
 	result = get_max_area(fences, 0, len(fences) - 1)
-	print result
+	print(result)
 	case_index += 1

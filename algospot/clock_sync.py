@@ -1,5 +1,7 @@
 # -*- coding: utf8 -*-
-total_case = input()
+# https://algospot.com/judge/problem/read/CLOCKSYNC
+
+total_case = int(input())
 case_index = 0
 case_count = 0
 
@@ -26,7 +28,7 @@ def clock_to_12(clocks, clock_idx, switch_idx):
 
 while case_index < total_case:
     case_count = 0
-    clocks = [(int(x) / 3) % 4 for x in raw_input().split()]
+    clocks = [(int(x) / 3) % 4 for x in input().split()]
     # 8번을 움직이는 스위치는 4번 밖에 없다
     # 12번을 움직이는 스위치는 4번 밖에 없다
     # 14번과 15번을 움직이는 스위치는 같다
@@ -60,5 +62,5 @@ while case_index < total_case:
                 case_count += clock_to_12(clocks, 2, 5)
                 if clocks[0] != 0 or clocks[14] != 0 or clocks[15] != 0:
                     case_count = -1
-    print case_count
+    print(case_count)
     case_index += 1

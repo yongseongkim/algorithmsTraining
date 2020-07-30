@@ -1,4 +1,5 @@
 # -*- coding: utf8 -*-
+# https://algospot.com/judge/problem/read/BRACKETS2
 
 YES = 'YES'
 NO = 'NO'
@@ -28,9 +29,9 @@ def check_brackets(str):
         return NO
     return YES
 
-test_case = input()
+test_case = int(input())
 case = 0
 while case < test_case:
-    str = raw_input()
-    print check_brackets(str)
+    str = input()
+    print(check_brackets(str))
     case += 1
