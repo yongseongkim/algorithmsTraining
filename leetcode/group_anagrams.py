@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # https://leetcode.com/problems/group-anagrams/
 
 import sys
@@ -6,6 +5,7 @@ import collections
 
 total_case = int(input())
 case_index = 0
+
 
 def group_anagrams(words):
     group = collections.defaultdict(list)

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # https://leetcode.com/problems/most-common-word/
 
 import sys
@@ -7,6 +6,7 @@ import collections
 
 total_case = int(input())
 case_index = 0
+
 
 def most_common_word(paragraph, banned):
     frequency = collections.defaultdict(int)

@@ -1,4 +1,3 @@
-# -*- coding:utf-8 -*-
 # 2019년 상반기 LINE 인턴 채용 코딩테스트 문제
 # https://engineering.linecorp.com/ko/blog/2019-firsthalf-line-internship-recruit-coding-test/
 
