@@ -6,29 +6,18 @@ import collections
 total_case = int(input())
 case_index = 0
 
-def longest_palindrome_substring(s):
-    already_palindrome = collections.defaultdict(bool)
-    def is_palindrome(s):
-        ls = list(s)
-        while len(ls) > 1:
-            if ls.pop(0) != ls.pop():
-                return False
-            if already_palindrome[''.join(ls)]:
-                return True
-        already_palindrome[s] = True
-        return True
-    if len(s) < 2 or s == s[::-1]:
-        return s
 
-    palindrome = ''
-    for length in range(2, len(s) + 1):
-        sidx = 0
-        while sidx + length <= len(s):
-            target = s[sidx:sidx + length]
-            if is_palindrome(target) and len(palindrome) < len(target):
-                palindrome = target
-            sidx += 1
-    return palindrome
+def longest_palindrome_substring(s):
+    def is_palindrome(substr):
+        return substr == substr[::-1]
+    if not s:
+        return ''
+    for window in range(len(s), 0, -1):
+        for i in range(0, len(s) - window + 1):
+            substr = s[i:i+window]
+            if is_palindrome(substr):
+                return substr
+    return s[0]
 
 while case_index < total_case:
     # do something

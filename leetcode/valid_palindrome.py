@@ -6,6 +6,7 @@ import sys
 total_case = int(input())
 case_index = 0
 
+
 def is_valid_palindrome(s):
     filtered = []
     for c in s:

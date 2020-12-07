@@ -6,6 +6,7 @@ import sys
 total_case = int(input())
 case_index = 0
 
+
 def trapped_volume(heights):
     lmax = 0
     rmax = 0
