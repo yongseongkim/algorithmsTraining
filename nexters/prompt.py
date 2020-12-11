@@ -1,4 +1,3 @@
-# -*- coding:utf-8 -*-
 total_case = input()
 case_index = 0
 

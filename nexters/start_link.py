@@ -1,5 +1,3 @@
-# -*- coding:utf-8 -*-
-
 def find_min_perform(num_players):
     
     return

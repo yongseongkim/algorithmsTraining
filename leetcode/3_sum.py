@@ -1,4 +1,3 @@
-# -*- coding:utf-8 -*-
 # https://leetcode.com/problems/3sum/
 import collections
 

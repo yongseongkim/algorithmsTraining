@@ -1,5 +1,3 @@
-# -*- coding:utf-8 -*-
-
 # 7 명을 선택하기 보다는 2명을 제외하는 방식
 def find_7dwarfs(dwarfs):
     dwarfs = _find_7dwarfs(dwarfs, [])

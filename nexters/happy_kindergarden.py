@@ -1,5 +1,3 @@
-# -*- coding:utf-8 -*-
-
 nk = input().split(' ')
 k = int(nk[1])
 students = [int(x) for x in input().split(' ')]

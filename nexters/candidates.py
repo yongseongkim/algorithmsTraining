@@ -1,5 +1,3 @@
-# -*- coding:utf-8 -*-
-
 limit = int(input())
 _ = int(input())
 votes = [int(num) for num in input().split(' ')]

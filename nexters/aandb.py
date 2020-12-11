@@ -1,4 +1,3 @@
-# -*- coding:utf-8 -*-
 src = input()
 result = input()
 

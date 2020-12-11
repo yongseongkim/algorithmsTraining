@@ -1,4 +1,3 @@
-# -*- coding:utf-8 -*-
 # https://leetcode.com/problems/top-k-frequent-elements/
 import collections
 import heapq

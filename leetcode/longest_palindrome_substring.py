@@ -1,4 +1,3 @@
-# -*- coding:utf-8 -*-
 # https://leetcode.com/problems/longest-palindromic-substring/submissions/
 import sys
 import collections

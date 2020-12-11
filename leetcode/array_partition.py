@@ -1,4 +1,3 @@
-# -*- coding:utf-8 -*-
 # https://leetcode.com/problems/array-partition-i/
 import collections
 

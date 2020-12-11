@@ -1,4 +1,3 @@
-# -*- coding:utf-8 -*-
 istr = input().split(' ')
 tnum, tsum = int(istr[0]), int(istr[1])
 iset = [int(x) for x in input().split(' ')]
